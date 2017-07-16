@@ -33,18 +33,8 @@ class GraphData:
         g.view()
 
 def test():
-    data = '''# Node Node EdgeWeight
-A B 1
-A C 1
-A D 1
-B C 1
-B E 1
-C F 1
-'''
-    # g = GraphData(data)
-    # g.graphvizView()
     with open("./data/graph1.txt") as f:
-        g = GraphData(data)
+        g = GraphData(f.read())
         g.graphvizView()
 
 if __name__ == "__main__":
