@@ -1,1 +1,5 @@
 *.bak
+*.pyc
+*.gv
+*.pdf
+__pycache__
